@@ -13,5 +13,7 @@ public interface CustomerRepository extends PagingAndSortingRepository<Customer,
 
     List<Customer> findCustomerByFirstNameAndLastName(String firstName, String lastName);
 
+    boolean existsCustomerByEmail(String email);
 
+    boolean deleteCustomerByUsername(String username);
 }
